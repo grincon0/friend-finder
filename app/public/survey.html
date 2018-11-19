@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="survey">
+            <h2>Survey Questions</h2>
+            <hr>
+            <h3><strong>About You</strong></h3>
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+            <h4>Link to photo (Required)</h4>
+            <input type="text" id="name" class="form-control" required>
+            <hr>
+            <h3>
+                <strong>Question 1</strong>
+            </h3>
+            <h4>You're always ready for Pokemon battle.</h4>
+            <select class="form-control" id="q1">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <hr>
+            <h3>
+                <strong>Question 2</strong>
+            </h3>
+            <h4>You get excited when undertaking a difficult task</h4>
+            <select class="form-control" id="q2">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 3</strong>
+            </h3>
+            <h4>You prefer creative independence as opposed to collaberation</h4>
+            <select class="form-control" id="q3">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 4</strong>
+            </h3>
+            <h4>The try to find songs are are lyrically relatable</h4>
+            <select class="form-control" id="q4">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 5</strong>
+            </h3>
+            <h4>You love getting into trouble</h4>
+            <select class="form-control" id="q5">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 6</strong>
+            </h3>
+            <h4>You prefer ordering things online as opposed to traveling somewhere to buy them.</h4>
+            <select class="form-control" id="q6">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 7</strong>
+            </h3>
+            <h4>You frequently find yourself loathing small talk</h4>
+            <select class="form-control" id="q7">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 8</strong>
+            </h3>
+            <h4>You like to take your time brushing your teeth</h4>
+            <select class="form-control" id="q8">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 9</strong>
+            </h3>
+            <h4>You're always ready the unexpected.</h4>
+            <select class="form-control" id="q9">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <hr>
+            <h3>
+                <strong>Question 10</strong>
+            </h3>
+            <h4>You believe that  certain events happen for a reason.</h4>
+            <select class="form-control" id="q10">
+                <option></option>
+                <option value="1">1(Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <button type="button" id="submit" class="btn btn-dark">Submit</button>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API friends list</a></a></p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script>
+        $("#submit").on('click', function () {
+            let results = {
+                name: $("name").val(),
+                photo: $("photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+
+            }
+
+
+            $.post("/api/friends", results, function (data) {
+                //modal
+
+
+
+            });
+
+
+
+        })
+
+
+    </script>
+
+</body>
+
+</html>
