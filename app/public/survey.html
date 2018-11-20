@@ -197,11 +197,8 @@
             }
 
 
-            $.post("/api/friends", results, function (data) {
-                //modal
-
-
-
+            $.post("/api/friends", results).done(function (data) {
+                console.log(data);
             });
 
 
