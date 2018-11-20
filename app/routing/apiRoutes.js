@@ -14,7 +14,7 @@ module.exports = function(app){
 
     app.post("/api/friends", function(req, res){
         let userArr = (req.body);
-        let match = [];
+        let match= '';
         let totalDiff;
         let currentDiff = 0;
         
@@ -38,7 +38,7 @@ module.exports = function(app){
         }
 
         friends.push(userArr);
-        
+
         res.json({status:"OK", matched: match, diff: totalDiff});
 
     });
